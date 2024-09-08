@@ -1,0 +1,127 @@
+/* Redefine margens e preenchimentos para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define o estilo básico do HTML e body */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.6; /* Melhora a legibilidade do texto */
+}
+
+/* Configura o layout do body como flexível e com altura mínima de 100vh */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: auto; 
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #87CEEB;
+  color: white;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente o conteúdo */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  padding: 15px 0;
+  width: 100%;
+}
+
+/* Estilo dos títulos */
+h1 {
+  color: #fff; /* Cor do título */
+  font-size: 2em; /* Ajusta o tamanho da fonte */
+}
+
+/* Contêiner principal para o layout */
+.container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+/* Estilo da barra lateral */
+.sidebar {
+  background-color: #87CEEB;
+  padding: 15px;
+  width: 200px;
+}
+
+/* Estilo da lista na barra lateral */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Estilo dos itens da lista na barra lateral */
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+/* Estilo dos links na barra lateral */
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 8px;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+/* Efeito de hover nos links da barra lateral */
+.sidebar ul li a:hover {
+  background-color: #ccc;
+}
+
+/* Estilo do conteúdo principal */
+main.content {
+  flex: 1;
+  padding: 15px;
+  margin-left: 200px; /* Espaço suficiente para a sidebar */
+}
+
+/* Estilo dos parágrafos */
+p {
+  margin-bottom: 20px; /* Espaçamento abaixo dos parágrafos */
+  text-align: justify; /* Justifica o texto do parágrafo */
+  max-width: 800px; /* Limita a largura do texto */
+  margin: 0 auto; /* Centraliza o parágrafo */
+}
+
+/* Estilo da galeria de imagens */
+.image-gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Centraliza as imagens */
+  flex-wrap: wrap; /* Permite que as imagens se movam para a linha seguinte se necessário */
+}
+
+/* Estilo das imagens na galeria */
+.image-gallery img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #87CEEB;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+.left-align {
+  text-align: left; /* Alinha o texto à esquerda */
+  max-width: 800px; /* Limita a largura do texto */
+  margin: 20px 0; /* Margem superior e inferior */
+}
+header .main-title {
+  margin-left: 320px; /* Ajuste a margem conforme necessário */
+  text-align: left; /* Garante que o texto está alinhado à esquerda dentro do título */
+}
